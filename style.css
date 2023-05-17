@@ -1,0 +1,199 @@
+@font-face{
+    font-family: 'bakeryFont';
+    src: url('/Users/christiancordero/Repos/restaurant-page-TOP/src/lofty-goals-font 2/LoftygoalsRegular-9Y5Xy.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'bakeryFont', sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/Users/christiancordero/Repos/restaurant-page-TOP/src/images/backdrop.png');
+    background-size: 50%;
+    background-repeat: repeat;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 300vh;
+}
+
+#top-nav {
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+    width: 100vw;
+    font-weight: 600;
+    background-color:  rgb(179, 204, 204);
+    align-items: center;
+    justify-content: center;
+}
+
+.top-nav-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    min-width: 100px;
+    padding: 1em;   
+    border: 1px solid black;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(139,0,139);   
+    border-radius: 10px;    
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.8);
+    transition: all 0.2s ease-in-out;
+}
+
+.top-nav-tab:hover {
+    color: yellow;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(2px);
+}
+
+#bakeryTitle {
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5em;
+}
+
+#tabContainer {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+#contentContainer.homepageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#homepage-content {
+    margin-top: 2.5em;
+    font-size: x-large;
+}
+
+#contentContainer.checkoutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    opacity: 80%;
+    animation: checkoutContainer 1.5s forwards;
+}
+
+#contentContainer {
+    display: flex;
+    flex-direction: column;
+    opacity: 85%;
+    height: 75%;
+    width: 60vw;
+    background-color:  pink; 
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: silver;
+    width: 80%;
+    /* width is fixed, height can be adjusted */
+    height: 30%;
+    border: 1px solid black;
+    opacity: 0; /* Set initial opacity to 0 */
+    animation: content 1s forwards; /* Apply the fade-in animation */
+}
+
+@keyframes content {
+    from {
+      opacity: 0; /* Start with 0 opacity */
+    }
+    to {
+      opacity: 1; /* End with 100% opacity */
+    }
+  }
+
+  @keyframes checkoutContainer {
+    from {
+      opacity: 80%; /* Start with 80% opacity */
+    }
+    to {
+      opacity: 95%; /* End with 100% opacity */
+    }
+  }
+
+.menuItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15em;
+}
+
+.menu-item-image {
+    width: 288px; 
+    height: 216px;
+    margin-top: 2em;
+}
+
+.menu-item-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+    color: black;
+    font-size: x-large;
+}
+
+.form-field {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: x-large; 
+}
+
+.form-header {
+    margin-top: 1em;
+}
+
+.form-submitButton {
+    background-color: rgb(139,0,139);
+    color: white;
+    font-size: xx-large;
+}
+
+.form-submitButton:hover {
+    background-color: rgb(139,0,139);
+    color: lightskyblue;
+}
+
+#bottom-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 24px;
+    height: 15%;
+    width: 100vw;
+    background-color: rgb(179, 204, 204);
+}
